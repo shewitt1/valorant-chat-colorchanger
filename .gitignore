@@ -46,7 +46,7 @@ Thumbs.db
 
 # etc
 .editorconfig
-.browserlistrc
+.browserslistrc
 .firebaserc
 .firebase
 .github/workflows
