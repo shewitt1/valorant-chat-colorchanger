@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist",
+    "public": "dist/valorant-chatcolor",
     "ignore": [
       "firebase.json",
       "**/.*",
