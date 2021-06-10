@@ -7,28 +7,32 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'valorant-chatcolor';
+  public colors: string[];
+
   constructor() {
+    this.colors = [];
     this.loadScripts();
   }
   loadScripts() {
-    let colors = [
+    this.colors = [
       '<warning>',
       '<enemy>',
       '<team>',
       '<notification>',
       '<system>',
     ]
+  }
     
     
-    function rainbow(){
+rainbow() {
       var colorThis = (<HTMLInputElement>document.getElementById('input')).value;
       var j = 0;
       var ret = "";
       for(var i = 0; i < colorThis.length; i++){
           if(colorThis.charAt(i) != ' '){
               if(j < 5) {// colors
-                  ret = ret.concat(colors[j]);
-                  ret = ret.concat(colorThis.charAt(i));
+                  ret = ret.concat(this.colors[j]);
+                  ret = ret.concat(this.colors[j].charAt(i));
                   ret = ret.concat("</>");
                   j++;
               }else{// white
@@ -44,5 +48,5 @@ export class AppComponent {
     }
     
   }
-}
+
 
