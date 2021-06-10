@@ -1,10 +1,11 @@
+
 <div class="container">
   <div class="header">
       <h1>Valorant Color Tool</h1>
   </div>
   <div class="body">
       <h2>Input the message you would like to color!</h2>
-      <input type="text" id="input">
+      <input type="text" id="input" name="input" placeholder="Enter text to colorize">
 
       <div class="buttons">
         <div class="buttoncontainer">
@@ -13,13 +14,13 @@
           <button id="green" (click)="green()">green</button>
           <button id="blue" (click)="blue()">blue</button>
           <button id="pink" (click)="pink()">pink</button>
-          <button id="random">random</button>
+          <button id="random" (click)="random()">random</button>
           <button id="rainbow" (click)="rainbow()">rainbow</button>
         </div>
       </div>
 
       <h2 id="output_header">Colored Output (Paste in-game)</h2>
-      <div class="output_container">
+      <div class="output_container" id="outputfix">
       
       <div id="output"></div>
       </div>
@@ -27,6 +28,6 @@
 
 
     <div class="footer">
-      <p>Created by <a href="https://twitter.com/spebner" target="_blank">hotdog</a>, <a href="https://www.instagram.com/bigfootsbf/" target="_blank">bigfootsbf</a>, and <a href="https://i.imgflip.com/1eb4fk.jpg" target="_blank">kassem</a></p>
+      <p>Created by <a href="https://twitter.com/spebner" target="_blank">hotdog#80085</a>, <a href="https://www.instagram.com/bigfootsbf/" target="_blank">bigfootsbf#8502</a>, and <a href="https://i.imgflip.com/1eb4fk.jpg" target="_blank">kassem</a></p>
     </div>
 </div>

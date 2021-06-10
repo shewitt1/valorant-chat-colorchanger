@@ -53,14 +53,15 @@ pink(){
    (<HTMLInputElement>document.getElementById("output")).innerText = ret;
 }
 
-/*random(){
+random(){
     var colorThis = (<HTMLInputElement>document.getElementById('input')).value;
     var ret = "";
+    var rand;
     for(var i = 0; i < colorThis.length; i++){
         if(colorThis.charAt(i) != ' '){
             rand = Math.floor(Math.random() * 5);
             if(rand < 5) {
-                ret = ret.concat(colors[rand]);
+                ret = ret.concat(this.colors[rand]);
                 ret = ret.concat(colorThis.charAt(i));
                 ret = ret.concat("</>");
             }else{
@@ -71,7 +72,9 @@ pink(){
         }
       }
    (<HTMLInputElement>document.getElementById("output")).innerText = ret;
-}*/
+   (<HTMLInputElement>document.getElementById("outputfix")).style.height = "auto";
+}
+
   rainbow() {
     var colorThis = (<HTMLInputElement>document.getElementById('input')).value;
     var j = 0;
@@ -93,6 +96,7 @@ pink(){
     }
 
    (<HTMLInputElement>document.getElementById("output")).innerText = ret;
+   (<HTMLInputElement>document.getElementById("outputfix")).style.height = "auto";
   }
 
 }
