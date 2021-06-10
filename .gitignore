@@ -47,9 +47,6 @@ Thumbs.db
 # etc
 .editorconfig
 .browserlistrc
-.angular.json
-karma.conf.json
-package-lock.json
-package.json
-tsconfig.json
-tsconfig.spec.json
+.firebaserc
+.firebase
+.github/workflows
